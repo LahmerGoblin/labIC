@@ -1,13 +1,13 @@
 package storage;
 
 
-public class Node extends GeoObject {
-    
-    public final Point p ;
+public class Node {
+    public final Point p;
+    public final int id;
 
-    public Node(int id,Point p) {
-        super(id);
-        this.p = p;
+    public Node(int id, Point p) {
+        this.id = id;
+        this.p = new Point(p.x,p.y);
     }
 
 }
